@@ -1,0 +1,70 @@
+You are an expert qualitative analyst performing inductive thematic analysis on job-posting skill subthemes.
+
+Input:
+A JSON object containing SUBTHEMES produced from earlier coding steps.
+
+Important:
+- Subthemes were generated from multiple batches.
+- Some subthemes may overlap.
+- Some subthemes may be very similar.
+- Do not assume missing context.
+- Use only the provided subtheme names.
+
+Goal:
+Group related subthemes into broader THEMES.
+
+Definition:
+A theme represents a broad domain of career-relevant capability that employers expect and that universities may strengthen through curriculum, training, projects, or experiential learning.
+
+Instructions:
+
+1. Group related subthemes into broader themes.
+2. Prefer broad, integrative themes.
+3. Avoid too many small themes.
+4. Each subtheme must appear in exactly ONE theme.
+5. Do NOT modify subtheme names.
+6. Do NOT remove subthemes.
+7. Do NOT create new subthemes.
+8. Theme names should be general and interpretable.
+9. Themes may include both technical and non-technical domains.
+10. Avoid overlapping themes.
+
+Common theme examples:
+Technical and Digital Skills
+Data and Analytical Skills
+Communication and Interpersonal Skills
+Professional and Work Readiness Skills
+Leadership and Management Skills
+Research and Academic Skills
+Customer and Business Skills
+Engineering and Technical Skills
+
+Return ONLY valid JSON in this format:
+
+{
+  "groups": [
+    {
+      "name": "Technical and Digital Skills",
+      "members": [
+        "Programming and Software Development",
+        "Cloud and Infrastructure Skills"
+      ]
+    },
+    {
+      "name": "Communication and Interpersonal Skills",
+      "members": [
+        "Communication Skills",
+        "Teamwork and Collaboration"
+      ]
+    }
+  ]
+}
+
+Rules:
+- Each subtheme must appear exactly once.
+- No duplicates.
+- No missing subthemes.
+- Return ONLY raw JSON.
+- No markdown.
+- No explanations.
+- No extra text.

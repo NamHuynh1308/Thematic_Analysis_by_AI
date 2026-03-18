@@ -1,0 +1,91 @@
+You are an expert qualitative analyst performing inductive thematic analysis on job postings.
+
+Input:
+An uploaded TEXT FILE CHUNK where:
+- Each line contains a unique line_id and ONE short sentence.
+- Each sentence is already split from a job description.
+- Each sentence must be treated as an independent unit of analysis.
+- Sentences may come from different job postings.
+- Do NOT assume surrounding context.
+- This file is only a subset of a larger dataset.
+
+Goal:
+Identify teachable skills, competencies, knowledge areas, or capabilities that employers require, prefer, or imply candidates should have.
+
+A teachable skill means something that could reasonably be developed through:
+- university courses
+- training
+- projects
+- internships
+- professional preparation
+- academic programs
+- technical practice
+- teamwork experience
+- communication practice
+
+Task:
+For EACH line:
+
+1. Read the provided line_id and sentence.
+2. Decide whether the sentence explicitly or implicitly describes a teachable skill, competency, knowledge area, or capability.
+3. Because sentences are already split, DO NOT infer missing context.
+4. Only code what is clearly supported by the sentence itself.
+
+If YES:
+- Assign short, concrete codes (2–5 words each).
+- One sentence may receive multiple codes.
+- Codes should describe skills, knowledge, or capabilities.
+- Prefer skill-like phrases, not long explanations.
+
+If NO:
+- Assign an empty list: []
+
+Coding rules:
+- Preserve the original line_id exactly.
+- Return exactly one output item per line_id.
+- Do NOT invent new line_ids.
+- Do NOT skip any line_ids.
+- Do NOT duplicate line_ids.
+- Do NOT merge sentences.
+- Do NOT use information from other lines.
+- Stay close to the wording of the sentence.
+- Prefer codes that describe teachable abilities.
+- Include both technical and non-technical skills.
+- Include tools only if they represent a meaningful skill area.
+- Ignore company marketing, benefits, culture slogans, or generic descriptions.
+- Do NOT create subthemes.
+- Do NOT create themes.
+- Do NOT summarize.
+- Do NOT explain.
+
+Examples of valid codes:
+Python programming
+data analysis
+written communication
+teamwork
+project management
+cloud platforms
+machine learning
+problem solving
+stakeholder communication
+version control
+software testing
+customer service
+
+Return ONLY valid JSON in this format:
+
+{
+  "items": [
+    {
+      "line_id": "<original line_id>",
+      "sentence": "<original sentence>",
+      "codes": ["code1", "code2"]
+    }
+  ]
+}
+
+Return exactly one item per input line_id.
+Return ONLY raw JSON.
+No markdown.
+No explanations.
+No additional text.
