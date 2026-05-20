@@ -15,61 +15,47 @@ Group similar codes into SUBTHEMES.
 Definition:
 A subtheme is a coherent cluster of related skills, competencies, or knowledge areas that employers expect and that universities may help students develop through coursework, projects, training, or experience.
 
-Instructions:
+STRICT RULES:
 
-1. Group conceptually similar codes together.
-2. Use meaning, not just word similarity.
-3. Prefer broader educationally meaningful clusters.
-4. Each code must appear in exactly ONE subtheme.
-5. Do NOT modify the original code text.
-6. Do NOT remove codes.
-7. Do NOT create new codes.
-8. Do NOT create themes.
-9. Subtheme names should be short and interpretable.
-10. Avoid duplicate or overlapping subthemes.
+1. Create between 15 and 30 subthemes.
+2. Each subtheme must contain multiple codes.
+3. No subtheme may contain more than 500 codes.
+4. Do NOT put all codes into one subtheme.
+5. Each code must appear in exactly ONE subtheme.
+6. Do NOT modify code text.
+7. Do NOT remove codes.
+8. Do NOT create new codes.
+9. Use conceptual similarity, not only word similarity.
+10. Subtheme names must be short and meaningful.
+11. Avoid duplicate or overlapping subthemes.
+12. All codes must be assigned.
 
-Subthemes may include:
-- technical skills
-- programming skills
-- data skills
-- communication skills
-- teamwork skills
-- professional skills
-- analytical skills
-- leadership skills
-- digital skills
-- work readiness skills
-
-Examples of good subtheme names:
+Good subtheme examples:
 Programming and Software Development
 Data Analysis and Statistics
+Cloud and Infrastructure
 Communication Skills
 Teamwork and Collaboration
-Project and Task Management
-Cloud and Infrastructure Skills
-Customer and Stakeholder Interaction
+Professional Skills
+Leadership and Management
 Research and Analytical Skills
+Business and Customer Skills
+Engineering and Technical Skills
 
-Return ONLY valid JSON in this format:
+Return ONLY valid JSON:
 
 {
   "groups": [
     {
       "name": "Programming and Software Development",
       "members": ["Python programming", "software testing"]
-    },
-    {
-      "name": "Communication Skills",
-      "members": ["written communication", "stakeholder communication"]
     }
   ]
 }
 
 Rules:
-- Each code must appear exactly once.
-- No code duplication.
-- No missing codes.
-- Return ONLY raw JSON.
-- No markdown.
-- No explanations.
-- No extra text.
+- Each code appears once
+- No duplicates
+- No missing codes
+- Return only JSON
+- No explanation

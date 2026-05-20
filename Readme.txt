@@ -15,7 +15,7 @@ jobs_cleaned.csv
 → step2_subthemes.json
 → step3.py (subthemes → themes)
 → step3_themes.json
-→ step4.py (build final dataset)
+→ step4.py (build final dataset of sentence, code, subtheme, theme)
 → final_dataset.csv
 
 

@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 MODEL = "gpt-4.1-mini"
 BATCH_SIZE = 50
-MAX_RETRY = 5
+MAX_RETRY = 2
 SLEEP_BETWEEN = 0.0
 
 
@@ -30,27 +30,40 @@ def build_chunk_text(df_chunk: pd.DataFrame) -> str:
     return "\n".join(lines)
 
 
-def call_llm(client: OpenAI, prompt: str, chunk_text: str) -> dict:
+def call_llm(client, prompt, chunk_text):
+
     full_prompt = prompt + "\n\nInput:\n" + chunk_text
+
     raw = ""
 
     for i in range(MAX_RETRY):
+
         try:
+
             resp = client.responses.create(
                 model=MODEL,
                 input=full_prompt,
                 temperature=0,
             )
+
             raw = resp.output_text.strip()
+
             return json.loads(raw)
 
         except Exception as e:
-            print(f"\nJSON/API error retry {i + 1}/{MAX_RETRY}: {e}")
-            if raw:
+
+            print(f"JSON/API error retry {i+1}/{MAX_RETRY}:", e)
+
+            try:
                 print(raw[:500])
+            except:
+                pass
+
             time.sleep(2)
 
-    raise RuntimeError("Failed after retries")
+    print("⚠️ Skipping bad batch")
+
+    return None
 
 
 def load_done_line_ids(output_path: Path) -> set[str]:
@@ -165,6 +178,10 @@ def main():
         chunk_text = build_chunk_text(chunk)
 
         data = call_llm(client, prompt, chunk_text)
+
+        if data is None: # pass bad patch
+            continue
+
         items = data.get("items", [])
 
         normalized_items = normalize_items(items, chunk)

@@ -1,0 +1,40 @@
+{
+  "Core Software Development": [
+    "Programming Languages",
+    "Frameworks and Libraries",
+    "Web, Frontend, and Mobile Development",
+    "Software Architecture and System Design",
+    "APIs and Integration",
+    "Databases and Data Storage",
+    "Version Control and Developer Tooling"
+  ],
+  "Cloud, Infrastructure, and Software Delivery": [
+    "Cloud and Platform Services",
+    "DevOps, CI/CD, and Infrastructure",
+    "Monitoring, Reliability, and Production Operations",
+    "Agile, SDLC, and Delivery Processes"
+  ],
+  "Data, AI, and Intelligent Systems": [
+    "Data Engineering, Analytics, and Visualization",
+    "AI, Machine Learning, and Intelligent Systems"
+  ],
+  "Specialized and Emerging Technologies": [
+    "IoT, Embedded, Hardware, and Networking",
+    "AR/VR, Graphics, and Interactive Media"
+  ],
+  "Quality, Security, and Risk Management": [
+    "Testing and Quality Assurance",
+    "Security, Compliance, and Risk"
+  ],
+  "Design, Product, and Business Systems": [
+    "UX, UI, Accessibility, and Product Design",
+    "Business, Domain, and Enterprise Systems"
+  ],
+  "Professional Qualifications and Workplace Competencies": [
+    "Education, Degrees, Certifications, and Experience",
+    "Communication, Collaboration, and Stakeholder Skills",
+    "Leadership, Management, and Project Coordination",
+    "Analytical, Problem-Solving, and Research Skills",
+    "Work Style, Professional Traits, and General Skills"
+  ]
+}

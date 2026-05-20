@@ -1,0 +1,64 @@
+{
+  "groups": [
+    {
+      "name": "Application and Web Development",
+      "members": [
+        "Microsoft .NET Development",
+        "Frontend Web Development",
+        "Backend and API Development",
+        "Mobile Development",
+        "UI/UX Design and Accessibility",
+        "E-commerce, CRM, ERP, and Enterprise Platforms",
+        "Graphics, Game, and Multimedia",
+        "Full-Stack Development"
+      ]
+    },
+    {
+      "name": "Data, AI, and Analytics",
+      "members": [
+        "Data Platforms and Databases",
+        "Data Engineering and Big Data",
+        "AI/ML and LLMs",
+        "Analytics and Business Intelligence"
+      ]
+    },
+    {
+      "name": "Cloud, DevOps, and Security",
+      "members": [
+        "Cloud Platforms and Services",
+        "DevOps and CI/CD",
+        "Containers and Orchestration",
+        "Security, Authentication, and Compliance"
+      ]
+    },
+    {
+      "name": "Infrastructure, Systems, and Reliability",
+      "members": [
+        "Systems, Networking, and Administration",
+        "Monitoring, Observability, and SRE",
+        "Embedded, Hardware, and IoT"
+      ]
+    },
+    {
+      "name": "Software Engineering and Architecture",
+      "members": [
+        "Software Development Process and Practices",
+        "Software Architecture and System Design",
+        "Programming Languages and Paradigms",
+        "Scripting and Automation Tools",
+        "Testing and Quality Assurance"
+      ]
+    },
+    {
+      "name": "Product, Project, and Professional Skills",
+      "members": [
+        "Business and Product Skills",
+        "Project Management and Agile Practices",
+        "Documentation and Communication",
+        "General Professional Skills and Soft Skills",
+        "Education, Degrees, and Certifications",
+        "Domain and Industry Knowledge"
+      ]
+    }
+  ]
+}

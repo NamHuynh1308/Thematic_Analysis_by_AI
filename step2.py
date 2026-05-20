@@ -3,25 +3,18 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from collections import Counter
 
 from openai import OpenAI
 
 
-MODEL = "gpt-4.1-mini"
+MODEL = "gpt-5"
 
-
-# =========================
-# LOAD PROMPT
-# =========================
 
 def load_prompt(path: Path) -> str:
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
-
-# =========================
-# LOAD JSONL CODES
-# =========================
 
 def load_codes_from_jsonl(path: Path):
 
@@ -41,10 +34,6 @@ def load_codes_from_jsonl(path: Path):
     return codes
 
 
-# =========================
-# MAIN
-# =========================
-
 def main():
 
     parser = argparse.ArgumentParser()
@@ -55,42 +44,47 @@ def main():
 
     args = parser.parse_args()
 
-    input_path = Path(args.input)
-    prompt_path = Path(args.prompt)
-    output_path = Path(args.output)
-
-    prompt = load_prompt(prompt_path)
+    prompt = load_prompt(Path(args.prompt))
 
     print("Loading codes...")
 
-    all_codes = load_codes_from_jsonl(input_path)
+    all_codes = load_codes_from_jsonl(Path(args.input))
 
-    unique_codes = sorted(set(all_codes))
+    counter = Counter(all_codes)
 
-    print("Unique codes:", len(unique_codes))
+    filtered_codes = [c for c, n in counter.items() if n >= 10] # Eliminate codes that only have less than 10 counts
+
+    unique_codes = sorted(filtered_codes)
+
+    print("Total codes:", len(all_codes))
+    print("Unique codes:", len(counter))
+    print("Filtered codes:", len(unique_codes))
 
     client = OpenAI()
 
     full_prompt = (
         prompt
         + "\n\nInput:\n"
-        + json.dumps(unique_codes, indent=2)
+        + json.dumps(unique_codes)
     )
 
     resp = client.responses.create(
         model=MODEL,
         input=full_prompt,
-        temperature=0,
     )
 
     raw = resp.output_text.strip()
 
-    data = json.loads(raw)
+    try:
+        data = json.loads(raw)
+    except:
+        print(raw)
+        raise
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-    print("Saved:", output_path)
+    print("Saved:", args.output)
 
 
 if __name__ == "__main__":
