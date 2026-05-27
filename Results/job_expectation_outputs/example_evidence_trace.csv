@@ -1,0 +1,36 @@
+category,job_id,line_id,code,sentence,section
+Programming,3,3_20,software development,What You’ll Do  Own the software solutions that are deployed to customersWrite code to improve products,Skill Expectations
+Testing / Quality Assurance,16,16_4,software testing,This team plays a critical role in ensuring the reliability and stability of our highest-performance Inference server hardware and software.,Skill Expectations
+Architecture / System Design,20,20_1,performance optimization,"The ideal candidate will be responsible for designing, implementing, and maintaining robust and scalable middleware solutions, ensuring high availability, performance, and security.",Skill Expectations
+Backend / API Development,1,1_16,backend development,Familiarity with foundational backend development technologies and architecture.,Skill Expectations
+Frontend / UI Development,24,24_22,React,What You’ll Need:  Experience: 7+ years of hands-on backend engineering experience using React,Skill Expectations
+Data / AI / Analytics,13,13_41,SQL,relational database (Oracle /DB2/SQL),Skill Expectations
+Security / Compliance,20,20_1,security,"The ideal candidate will be responsible for designing, implementing, and maintaining robust and scalable middleware solutions, ensuring high availability, performance, and security.",Skill Expectations
+Problem Solving / Analytical Thinking,3,3_8,problem solving,Mission Software Engineers solve technical challenges of operational scenarios while owning the end-to-end delivery of winning capabilities such as Counter Intrusion,Skill Expectations
+Communication,1,1_17,communication skills,"Strong communication and collaboration skills, with a team-oriented mindset.",Skill Expectations
+Collaboration / Teamwork,5,5_7,collaboration,You will have the opportunity to part of Development of market leading products in the Capital Market  We are made up of high-performing teams that meet in person to learn and collaborate as needed.,Skill Expectations
+Leadership / Mentoring,5,5_0,mentoring,"At Broadridge, we've built a culture where the highest goal is to empower others to accomplish more.",Skill Expectations
+Product / Business Understanding,38,38_18,stakeholder communication,quality project deliverables (Business / IT Solution) Lead business requirement discussion with business stakeholders,Skill Expectations
+Cloud platforms,7,7_15,AWS,"Technologies You’ll Use  Kubernetes, PostgresSQL, ArgoCD, Terraform, Ansible, Python, Go, Java, AWS, GCp, Azure, Grafana, Buildkite, Temporal etc.",Tooling Expectations
+Version control,16,16_64,version control,"Ability to work independently and as part of a team.Experience with version control systems (e.g., Git).",Tooling Expectations
+CI/CD,16,16_72,CI/CD pipelines,Kubernetes).Experience with CI/CD pipelines.Knowledge of low level hardware communication protocols (i2c,Tooling Expectations
+Containers / Orchestration,4,4_29,Kubernetes,K8s preferred).Experience working with multiple programming languages.Experience working with time series data,Tooling Expectations
+Databases,13,13_41,SQL,relational database (Oracle /DB2/SQL),Tooling Expectations
+AI / Data tools,2,2_33,data analysis,test systems Monitors performance of programs after implementation Analyzes,Tooling Expectations
+Frontend frameworks / web stack,24,24_22,React,What You’ll Need:  Experience: 7+ years of hands-on backend engineering experience using React,Tooling Expectations
+Testing tools / QA automation,5,5_15,quality assurance,review the tasks assigned to developers to see the changes are done with quality,Tooling Expectations
+Monitoring / Observability,40,40_41,monitoring,monitoringYou are comfortable navigating,Tooling Expectations
+Infrastructure as Code / Automation,13,13_12,automation,automation/process improvement projectsKey member of our Identity Access Management technology teamActively participate in project planning,Tooling Expectations
+Security / Identity tools,20,20_1,security,"The ideal candidate will be responsible for designing, implementing, and maintaining robust and scalable middleware solutions, ensuring high availability, performance, and security.",Tooling Expectations
+Degree requirement,14,14_84,bachelor's degree,PowerPoint   Preferred Qualifications   Bachelor's degree in civil,Credential Expectations
+Years of experience,4,4_23,software development experience,other engineering discipline.6+ years of software development,Credential Expectations
+Certifications,264,264_56,certifications,Visibility Architect certificationsWorking knowledge of Apex,Credential Expectations
+Domain experience,819,819_35,SaaS,apply knowledge of available managed services (PaaS/SaaS/IaaS),Credential Expectations
+Portfolio / project experience,39,39_52,open source contribution,as open source artifact(s)Consistent track record of delivering high quality solutions to large,Credential Expectations
+Agile work,6,6_43,project management,intuitive AI-powered user experiences on PoeLead a group of engineers to drive a project from start to finishIterate quickly on projects,Work-Practice Expectations
+Collaboration,5,5_7,collaboration,You will have the opportunity to part of Development of market leading products in the Capital Market  We are made up of high-performing teams that meet in person to learn and collaborate as needed.,Work-Practice Expectations
+Ownership,16,16_64,independent work,"Ability to work independently and as part of a team.Experience with version control systems (e.g., Git).",Work-Practice Expectations
+Communication,1,1_17,communication skills,"Strong communication and collaboration skills, with a team-oriented mindset.",Work-Practice Expectations
+Delivery responsibility,28,28_21,software maintenance,"Job Summary  The PHP Developer will assist in the design, development and maintenance of a several in-house business applications to support Corporate Sales, Operations and Finance as well as other departments.",Work-Practice Expectations
+Adaptability / Learning,2,2_36,adaptability,to adapt to new requirements Prepares documentation to describe program development,Work-Practice Expectations
+Stakeholder / Customer orientation,38,38_18,stakeholder communication,quality project deliverables (Business / IT Solution) Lead business requirement discussion with business stakeholders,Work-Practice Expectations
